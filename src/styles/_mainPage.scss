@@ -1,0 +1,28 @@
+.page {
+  &__navigation {
+    
+    &_item {
+      a {
+        padding: 5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 19px;
+        
+      }
+      &:first-child {
+        a {
+
+          padding-left: 0;
+        }
+      }
+
+    }
+
+    &_item-pre {
+        color: #686868;
+    }
+  }
+
+  
+}

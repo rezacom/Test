@@ -1,0 +1,133 @@
+.table-c {
+  margin-top: 50px;
+
+  &__head {
+    &_new-btn {
+      border: 1px solid #162641;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin-left: 30px;
+      width: 135px;
+      height: 36px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+
+      &:focus {
+        outline: none;
+      }
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+
+    &_mode {
+      background: #fff;
+      width: 220px;
+      height: 40px;
+      border-radius: 3px;
+      padding: 0 15px;
+
+      &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &_btn {
+        button {
+          width: 35px;
+          height: 24px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          border: 1px solid #898989;
+
+          &:focus {
+            outline: none;
+            background: $primary-color;
+            color: $white-color;
+            border: 1px solid $primary-color;
+          }
+        }
+
+        .btn-yes {
+          border-radius: 3px 0px 0px 3px;
+        }
+
+        .btn-no {
+          border-radius: 0px 3px 3px 0px;
+        }
+      }
+    }
+
+    &_left {
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  margin-top: 10px;
+
+  thead {
+    background: #e3e5e8;
+    border-radius: 3px;
+
+    th {
+      padding: 20px 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      /* Primary */
+
+      color: #162641;
+    }
+  }
+
+  tbody {
+    border-radius: 3px;
+
+    td {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      //   margin-top: 10px;
+      text-align: center;
+
+      div {
+        padding: 20px 15px;
+        background: #fff;
+        height: 100%;
+        display: block;
+        margin: 1.5px -1px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 19px;
+        /* identical to box height */
+
+        /* Text */
+
+        color: #686868;
+      }
+
+      /* Primary */
+
+      color: #162641;
+    }
+  }
+}

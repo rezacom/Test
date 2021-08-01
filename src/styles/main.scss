@@ -2,8 +2,16 @@
 @import "./side";
 @import "./mainPage";
 @import "./header";
-
+@import "./searchbar";
+@import "./table";
 
 .panel {
     min-height: 100vh;
+}
+
+.pages {
+    padding: 30px;
+    background-color: #f5f6fa;
+    min-height: 100vh;
+
 }
