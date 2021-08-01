@@ -1,23 +1,42 @@
 import { Button } from "@material-ui/core";
-import { ThemeProvider } from "@material-ui/core/styles";
+import Header from "./components/Header";
+import Side from "./components/Side";
 import theme from "./theme";
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import Main from "./pages/Main";
+
 
 function App() {
+  const classes = useStyles();
+
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        <h1>Welcome!</h1>
-
-        <p>This is my MUI Tailwind website!</p>
-
-        <div>
-          <Button variant="contained" color="primary">
-            Button
-          </Button>
+      <div className="panel flex">
+        <Side />
+        <div className="main flex-1">
+          <Header />
+          <div className="pages">
+            <Main />
+          </div>
         </div>
       </div>
     </ThemeProvider>
   );
 }
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    // color: theme.palette.primary.main,
+    '&$checked': {
+      // color: theme.palette.primary.main,
+    },
+  },
+  checked: {},
+}));
+
 export default App;
+
+
+
+
+
