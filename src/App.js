@@ -11,6 +11,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      {/* <div className="container"> */}
+
       <div className="panel flex">
         <Side />
         <div className="main flex-1">
@@ -20,6 +22,7 @@ function App() {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </ThemeProvider>
   );
 }
